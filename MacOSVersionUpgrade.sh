@@ -19,7 +19,7 @@ if version_gt "$latest_version" "$current_version"; then
     if [ "$update_choice" == "y" ]; then
         echo "Starting the update process..."
         # Add commands to start the update process here
-        # For example: softwareupdate -i -a
+        softwareupdate -i -a
     else
         echo "No update performed. Exiting."
     fi
