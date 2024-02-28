@@ -13,5 +13,5 @@ find "$applications_folder" -name "*.app" -type d | while read -r app_path; do
     version=$(defaults read "$version_plist" CFBundleShortVersionString 2>/dev/null)
 
     # Print application name and version
-    echo "Application: $app_name, Version: $version"
+    echo "Application: $app_name - Version: $version ,"
 done
